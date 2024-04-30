@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main() {
+//oq eu preciso ter a entrada de 3 numeros e devolver eles de forma inversa
+//preciso de 1 vetor que leia char e pegar os dados, depois colocar na ordem inversa.
+//por meio de vetores e laços de repetição.
+   int v[2]; 
+  int i;
+  for (i=0;i<=2;i++){
+    printf("digite o %d:", i);
+    scanf("%d", &v[i]);
+    
+  }
+  int j;
+  for (j=2; j>=0;j--){
+    printf("%d\n", v[j]);
+  }
+return 0;
+}
