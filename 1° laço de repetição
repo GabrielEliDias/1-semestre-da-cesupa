@@ -1,0 +1,29 @@
+#include <stdio.h>
+int main(){
+  int namoro;
+  printf("quer namorar comigo?\n 1-sim\n 2-nao\n resposta:");
+  scanf("%d", &namoro);
+  do {
+    printf("repete:");
+    scanf("%d", &namoro);
+  } while (namoro ==2);
+  printf("Eu tbm te amo!");
+  return 0;
+}
+//lógica de programação:
+// forma de pegar o desafio ou problema e organizar em código, tendo tem varias etapas:
+//1: leitura do desafio
+//2: analise do desafio
+//3: identificar oq eu preciso para resolver o problema
+//4:quebrar as etapas do problema
+//5:identificação de padrões
+
+
+//laços de repetição: sera um comando que repete uma ação, exemplo: o codigo onde estamos é um exemplo de laço e repetição.
+//tipos:
+//while: enquanto; aqui o comando será repetido até que a condição seja falsa. portanto se a condição nunca for atingida o loop nunca terá fim.
+//do while: faça enquanto; aqui o comando será repetido pelo menos uma vez, a mesma coisa, porém ele é repetido uma vez e sempre que a condição for atingida ele irá repetir, muito usado para repetição de entrada de dados.
+//for: para; aqui o comando será repetido até que a condição seja falso.
+//break: para; aqui o comando para o laço de repetição.
+
+
