@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <math.h>
+int main(){
+	double A, B, C, delta, x1, x2;
+	printf("Calculo de equacao do segundo grau:\n ");
+	printf("diga os coeficientes da equacao:\n");
+	printf("diga A:");
+	scanf("%lf", &A);
+	printf("diga B:");
+	scanf("%lf", &B);
+	printf("diga C:");
+	scanf("%lf", &C);
+	printf("sua equacao eh %lfx^2+%lfx+%lf\n", A, B, C);
+	
+	delta = B*B-4*A*C;
+	x1 = (-B+sqrt(delta))/(2*A);
+	x2 = (-B-sqrt(delta))/(2*A);
+	
+	printf("x1 eh %lf, x2 eh %lf", x1, x2);
+	
+	
+	return 0;
+}
