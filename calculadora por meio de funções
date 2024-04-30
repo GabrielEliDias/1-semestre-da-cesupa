@@ -1,0 +1,56 @@
+#include <stdio.h>
+#include <stdlib.h>
+float somar(float a, float b){
+  return a+b;
+}
+float multiplicar(float a,float b){
+  return a*b;
+}
+float subtrair(float a, float b){
+  return a-b;
+}
+float dividir(float a, float b){
+  if(b !=0){
+    return a/b;
+  }
+  else {
+    return -99999999999;
+  }
+}
+int main() {
+  //funções:
+  //é para simplificar a leitura do nosso código.
+  //pode dividir código em várias partes.
+  float num1, num2;
+  float resultado;
+  char operacao;
+  printf("digite o primeiro numero:");
+  scanf("%d", &num1);
+  fflush(stdin);
+  printf("digite a operação:");
+  scanf(" %c", &operacao);
+  printf("digite o segundo numero:");
+  scanf("%d", &num2);
+
+  if(operacao == '+'){
+   resultado = somar(num1,num2);
+    printf("%f", resultado);
+  }
+  else if (operacao == '*'){
+   resultado = multiplicar(num1,num2);
+    printf("%f", resultado);
+  }
+  else if(operacao == '*'){
+   resultado = multiplicar(num1,num2);
+    printf("%f", resultado);
+  }
+  else if(operacao == '-'){
+   resultado = subtrair(num1,num2);
+    printf("%f", resultado);
+  }
+  else {
+    printf("erro!");
+  }
+  
+  return 0;
+}
