@@ -1,0 +1,23 @@
+//vetores e array:
+#include <stdio.h>
+
+int main(void) {
+  printf("digite o numero de meses para calculo do salario:");
+  int n;
+  scanf("%d",&n);
+ float salario[n];//esse numeros começarão no 0.
+  //vetor[0]. vetor[1], vetor[2], ....
+  float soma;
+  int index;
+  for (index = 0; index < n; index++){
+    printf("\nDigite o salario do mes %d: \n", index+1);
+    scanf("%f", &salario[index]);
+    soma = soma + salario[index];
+     printf("O valor total é: %f", soma);
+  // os vetores pode salvar varias informações e uma uníca variavel.
+  // para separar as informações é necessário usar a posição delas. então se temos uma variável com 4valores dentro dele, podemos usar o vetor[0], vetor[1], vetor[2] e v, sendo uma variável com 4 posições.
+  //uma ideia parecida é sobre o vetor ser uma gaveta com varias divisorias, onde casa divisoria tem uma informação.
+  //os vetores criados do tipo inteiro irão aceitar somente numeros inteiros. a mesma analise se aplica para os vetores do tipo float. a mesma analise se aplica para os vetores do tipo char.
+  //para acessar o valor de uma posição do vetor, basta usar o nome do vetor e o indice da posição
+  return 0;
+}
