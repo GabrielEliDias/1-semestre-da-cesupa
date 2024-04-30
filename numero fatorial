@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main(void) {
+ int fatorial, numero, controle;
+  int i = 1;
+  printf("Digite um número: ");
+  scanf("%d", &numero);
+  controle = numero -1;
+  while (i < controle){
+    i++;
+    numero = numero*i;
+    
+  }
+  printf("%d\n", numero);
+  return 0;
+}
