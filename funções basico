@@ -1,0 +1,24 @@
+#include <stdio.h>
+// está é a função que será repetida.
+// tomar cuidado com as variaveis, mesmo usando variaveis "iguais", se ela está
+// na função ela existe somente na função. VARIÁVEL LOCAL!!!!!! 
+//Se quiser uma variável igual para dentro e fora do código crie uma variável fora da função e do main.
+
+void desenhar_A(int quantidade, char simbulo) {
+  int i;
+  for (i = 1; i <= quantidade; i++) {
+    printf("%s", simbulo);
+  }
+}
+
+int main(void) {
+  int tamanho;
+  char S;
+  printf("digite o simbulo:");
+  scanf("%c", &S);
+  printf("digite a quantidade:");
+  scanf("%d", &tamanho);
+  // função embaixo.
+  desenhar_A(tamanho, S);
+  return 0;
+}
