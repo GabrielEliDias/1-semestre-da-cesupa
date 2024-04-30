@@ -1,0 +1,44 @@
+#include <stdio.h>
+int main(){
+	int n1, n2;
+	printf("pedra, papel e tesoura:\n");
+	printf("primeira jogada:\n 1-pedra\n 2-papel\n 3-tesoura\n");
+
+	scanf("%d", &n1);
+	printf("\nsegunda jogada:\n 1-pedra\n 2-papel\n 3-tesoura\n");
+	scanf("%d", &n2);
+	
+	if (n1 != n2)
+	{
+		if (n1 == 1 && n2 == 2 )
+		{
+			printf("papel vence");
+		}
+			if (n1 == 1 && n2 == 3 )
+		{
+			printf("pedra vence");
+		}
+			if (n1 == 2 && n2 == 1 )
+		{
+			printf("papel vence");
+		}
+			if (n1 == 2 && n2 == 3 )
+		{
+			printf("tesoura vence");
+		}
+			if (n1 == 3 && n2 == 2 )
+		{
+			printf("tesoura vence");
+		}
+			if (n1 == 3 && n2 == 1 )
+		{
+			printf("pedra vence");
+		}
+	}
+	else 
+	{
+		(n1 == n2);
+		printf("empatamos");
+	}
+	return 0;
+ }
